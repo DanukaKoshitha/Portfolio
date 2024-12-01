@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio Website</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/0fb45a36ef.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <!-- ///////////////////  Home ///////////////////// -->
@@ -14,11 +15,11 @@
         <nav>
           <img src="img/Screenshot 2024-11-09 144543.png" alt="" class="logo" />
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <!-- <li><a href="#">Portfolio</a></li> -->
-            <li><a href="#">Contact</a></li>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
         <div id="header-text">
@@ -30,16 +31,18 @@
         </div>
       </div>
     </div>
+
+    <br /><br /><br />
     <!-- //////////////////////////  About   //////////////////////// -->
 
-    <div class="about">
+    <div id="about">
       <div class="container">
         <div class="row">
           <div class="col-1">
             <img src="img/ai.png" />
           </div>
           <div class="col-2">
-            <h1 style="font-size: 60px; font-weight: 600">About Me</h1>
+            <h1 class="sub-title">About Me</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
               distinctio ratione nostrum, magni minus dolorum doloribus quia
@@ -48,30 +51,57 @@
             </p>
 
             <div class="tab-titles">
-              <div class="links active-link" onclick="opentab('skills')">Skills</div>
-              <div class="links" onclick="opentab('experience')">Experience</div>
+              <div class="links active-link" onclick="opentab('skills')">
+                Skills
+              </div>
+              <div class="links" onclick="opentab('experience')">
+                Experience
+              </div>
               <div class="links" onclick="opentab('education')">Education</div>
             </div>
             <div class="tab-contents active-tab" id="skills">
               <ul>
-                <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
-                <li><span>Web Deverlopment</span><br>Web app Deverlopment</li>
-                <li><span>App Development</span><br>Building Android/ios apps</li>
+                <li><span>UI/UX</span><br />Designing Web/App interfaces</li>
+                <li><span>Web Deverlopment</span><br />Web app Deverlopment</li>
+                <li>
+                  <span>App Development</span><br />Building Android/ios apps
+                </li>
               </ul>
             </div>
             <div class="tab-contents" id="experience">
               <ul>
-                <li><span>2024-Current</span><br>Fullstack Deverloper Training at ICET Institute.</li>
-                <li><span>Problems Solving</span><br>Learn and Practices Solving the problems.</li>
-                <li><span>Join the Internship</span><br>I will join to My First Internship in 2025 March.</li>
-                <li><span>Soft Skills & Team Working</span><br>I have and get soft skills.This part is Mandatory part of It Industry..</li>
+                <li>
+                  <span>2024-Current</span><br />Fullstack Deverloper Training
+                  at ICET Institute.
+                </li>
+                <li>
+                  <span>Problems Solving</span><br />Learn and Practices Solving
+                  the problems.
+                </li>
+                <li>
+                  <span>Join the Internship</span><br />I will join to My First
+                  Internship in 2025 March.
+                </li>
+                <li>
+                  <span>Soft Skills & Team Working</span><br />I have and get
+                  soft skills.This part is Mandatory part of It Industry..
+                </li>
               </ul>
             </div>
             <div class="tab-contents" id="education">
               <ul>
-                <li><span>2024</span><br>Enter the IT insustry with learning java.</li>
-                <li><span>2025</span><br>Learn the latest Frame Work.(React,angular)</li>
-                <li><span>Self Study</span><br>Learning the any technologys and do the project using learned technologys.</li>
+                <li>
+                  <span>2024</span><br />Enter the IT insustry with learning
+                  java.
+                </li>
+                <li>
+                  <span>2025</span><br />Learn the latest Frame
+                  Work.(React,angular)
+                </li>
+                <li>
+                  <span>Self Study</span><br />Learning the any technologys and
+                  do the project using learned technologys.
+                </li>
               </ul>
             </div>
           </div>
@@ -81,7 +111,130 @@
 
     <!-- ///////////////////  Services   ///////////////// -->
 
-    
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Deverlopment</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque
+              fuga maiores distinctio modi, nihil optio expedita beatae, sunt
+              voluptates doloremque sequi cumque molestiae ipsum explicabo
+              blanditiis tempore, ad numquam! Ipsum.
+            </p>
+            <a href="#">learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Deverlopment</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque
+              fuga maiores distinctio modi, nihil optio expedita beatae, sunt
+              voluptates doloremque sequi cumque molestiae ipsum explicabo
+              blanditiis tempore, ad numquam! Ipsum.
+            </p>
+            <a href="#">learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-chess"></i>
+            <h2>Game Deverlopment</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque
+              fuga maiores distinctio modi, nihil optio expedita beatae, sunt
+              voluptates doloremque sequi cumque molestiae ipsum explicabo
+              blanditiis tempore, ad numquam! Ipsum.
+            </p>
+            <a href="#">learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------------- Portfolio  ------------------ -->
+
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="img/p1.jpg"/>
+        <div class="layer">
+          <h3>Social Media App</h3>
+          <p>
+            The app connects you to the talented people around the world. 
+            Download it from the play store.
+          </p>
+          <a href="#">
+            <i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="img/p2.jpg" />
+        <div class="layer">
+          <h3>Social Media App</h3>
+          <p>
+            The app connects you to the talented people around the world. 
+            Download it from the play store.
+          </p>
+          <a href="#">
+            <i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="img/p3.jpg" />
+        <div class="layer">
+          <h3>Social Media App</h3>
+          <p>
+            The app connects you to the talented people around the world. 
+            Download it from the play store.
+          </p>
+          <a href="#">
+            <i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="btn">see more</a>
+  </div>
+</div>
+
+<!-- --------------- Contact  ----------------- -->
+
+<div id="contact">
+  <div class="container">
+      <div class="row">
+          <div class="contact-left">
+              <h1 class="sub-title">Contact Me</h1>
+              <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+              <p><i class="fa-solid fa-square-phone"></i>0123456789</p>
+              <div class="social-icons">
+                  <a href="https://facebook.com"><i class="fab fa-facebook"></i></a>
+                  <a href="#"><i class="fab fa-twitter-square"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-linkedin"></i></a>
+              </div>
+              <a href="" class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+              <form>
+                  <input type="text" name="Name" placeholder="Your Name" required>
+                  <input type="email" name="email" placeholder="Your Email" required>
+                  <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                  <button type="submit" class="btn btn2">Submit</button>
+              </form>
+          </div>
+      </div>
+  </div>
+  <div class="copyright">
+    <p>Copyright © 2024 Danuka.</p>
+  </div>
+</div>
+
+
 
     <script src="app.js"></script>
   </body>
